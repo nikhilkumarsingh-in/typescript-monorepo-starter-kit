@@ -1,14 +1,13 @@
 {
     "$schema": "https://json.schemastore.org/tsconfig",
+
     "compilerOptions": {
         "allowArbitraryExtensions": true,
-        "allowImportingTsExtensions": true,
         "composite": true,
         "esModuleInterop": true,
         "forceConsistentCasingInFileNames": true,
         "incremental": true,
         "isolatedModules": true,
-        "noEmit": true,
         "noFallthroughCasesInSwitch": true,
         "noImplicitOverride": true,
         "noImplicitReturns": true,
