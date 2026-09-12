@@ -9,11 +9,15 @@
     ],
     "keywords": [
         "typescript",
-        "typescript-monorepo",
+        "monorepo",
         "npm-workspaces",
+        "typescript-monorepo",
+        "typescript-template",
+        "monorepo-starter",
         "starter-kit",
-        "starter-template",
-        "project-references",
+        "workspaces",
+        "prettier",
+        "typescript-project-references",
         "incremental-build"
     ],
     "homepage": "https://github.com/nikhilkumarsingh-in/typescript-monorepo-starter-kit#readme",
