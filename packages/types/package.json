@@ -1,0 +1,21 @@
+{
+    "name": "@repo/types",
+    "version": "1.0.0",
+    "private": true,
+    "description": "Types package for the monorepo.",
+    "type": "module",
+    "main": "./dist/index.js",
+    "scripts": {
+        "typecheck": "tsc --noEmit"
+    },
+    "devDependencies": {
+        "@types/node": "^22.20.2"
+    },
+    "types": "./dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "default": "./dist/index.js"
+        }
+    }
+}

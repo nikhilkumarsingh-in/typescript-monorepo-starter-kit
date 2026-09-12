@@ -13,6 +13,8 @@
     "scripts": {
         "dev:backend": "npm run dev --workspace=@repo/backend",
         "start:backend": "npm start --workspace=@repo/backend",
+        "typecheck": "npm run typecheck --workspaces --if-present",
+        "typecheck:types": "npm run typecheck --workspace=@repo/types",
         "build": "tsc -b",
         "clean:build": "tsc -b --clean",
         "format": "prettier --write .",

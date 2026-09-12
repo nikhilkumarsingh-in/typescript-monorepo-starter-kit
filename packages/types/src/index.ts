@@ -1,0 +1,41 @@
+const APPLICATION_STATUS_CODES = {
+    OK: 200,
+    CREATED: 201,
+    NO_CONTENT: 204,
+    BAD_REQUEST: 400,
+    UNAUTHORIZED_ACCESS: 401,
+    FORBIDDEN: 403,
+    DATA_OR_RESOURCE_NOT_FOUND: 404,
+    DATA_CONFLICT: 409,
+    TOO_MANY_REQUESTS: 429,
+    INTERNAL_SERVER_ERROR: 500,
+    NOT_IMPLEMENTED: 501,
+    SERVICE_UNAVAILABLE: 503
+} as const;
+
+type ApplicationStatusCodeKey = keyof typeof APPLICATION_STATUS_CODES;
+type ApplicationStatusCodeValue = (typeof APPLICATION_STATUS_CODES)[ApplicationStatusCodeKey];
+
+const APPLICATION_ERROR_CODES = {
+    BAD_REQUEST: "BAD_REQUEST",
+    UNAUTHORIZED_ACCESS: "UNAUTHORIZED_ACCESS",
+    FORBIDDEN: "FORBIDDEN",
+    DATA_OR_RESOURCE_NOT_FOUND: "DATA_OR_RESOURCE_NOT_FOUND",
+    DATA_CONFLICT: "DATA_CONFLICT",
+    TOO_MANY_REQUESTS: "TOO_MANY_REQUESTS",
+    INTERNAL_SERVER_ERROR: "INTERNAL_SERVER_ERROR",
+    NOT_IMPLEMENTED: "NOT_IMPLEMENTED",
+    SERVICE_UNAVAILABLE: "SERVICE_UNAVAILABLE"
+} as const;
+
+type ApplicationErrorCodeKey = keyof typeof APPLICATION_ERROR_CODES;
+type ApplicationErrorCodeValue = (typeof APPLICATION_ERROR_CODES)[ApplicationErrorCodeKey];
+
+export { APPLICATION_STATUS_CODES, APPLICATION_ERROR_CODES };
+
+export type {
+    ApplicationStatusCodeKey,
+    ApplicationStatusCodeValue,
+    ApplicationErrorCodeKey,
+    ApplicationErrorCodeValue
+};
