@@ -2,32 +2,11 @@
     "name": "typescript-monorepo-starter-kit",
     "private": true,
     "version": "1.0.0",
-    "description": "Production-ready TypeScript monorepo starter kit with a complete development environment for building scalable applications and reusable packages.",
+    "description": "TypeScript monorepo starter kit for full stack application.",
     "workspaces": [
         "packages/*",
         "apps/*"
     ],
-    "keywords": [
-        "typescript",
-        "monorepo",
-        "npm-workspaces",
-        "typescript-monorepo",
-        "typescript-template",
-        "monorepo-starter",
-        "starter-kit",
-        "workspaces",
-        "prettier",
-        "typescript-project-references",
-        "incremental-build"
-    ],
-    "homepage": "https://github.com/nikhilkumarsingh-in/typescript-monorepo-starter-kit#readme",
-    "bugs": {
-        "url": "https://github.com/nikhilkumarsingh-in/typescript-monorepo-starter-kit/issues"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/nikhilkumarsingh-in/typescript-monorepo-starter-kit.git"
-    },
     "license": "MIT",
     "author": "Nikhil Kumar Singh <nikhilkumarsingh.in@gmail.com>",
     "type": "module",
@@ -40,5 +19,8 @@
     "devDependencies": {
         "prettier": "^3.9.6",
         "typescript": "^7.0.2"
+    },
+    "engines": {
+        "node": ">=24.0.0"
     }
 }
