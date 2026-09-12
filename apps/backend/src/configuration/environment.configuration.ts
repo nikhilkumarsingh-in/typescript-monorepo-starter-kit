@@ -13,5 +13,7 @@ function handleGetEnvironmentVariableByName(name: string) {
 
 export const EnvironmentVariables = {
     PORT: Number(handleGetEnvironmentVariableByName("PORT")),
-    CURRENT_ENVIRONMENT: handleGetEnvironmentVariableByName("NODE_ENV")
+    CURRENT_ENVIRONMENT: handleGetEnvironmentVariableByName("NODE_ENV"),
+
+    FRONTEND_URL: handleGetEnvironmentVariableByName("FRONTEND_URL")
 } as const;
