@@ -1,7 +1,7 @@
 {
     "name": "typescript-monorepo-starter-kit",
-    "private": true,
     "version": "1.0.0",
+    "private": true,
     "description": "TypeScript monorepo starter kit for full stack application.",
     "workspaces": [
         "packages/*",

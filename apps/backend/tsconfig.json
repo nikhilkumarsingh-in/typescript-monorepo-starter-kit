@@ -6,7 +6,9 @@
         "moduleDetection": "force",
         "moduleResolution": "nodenext",
         "rewriteRelativeImportExtensions": true,
-        "target": "esnext"
+        "target": "esnext",
+
+        "types": ["node"]
     },
 
     "include": ["./src"],
