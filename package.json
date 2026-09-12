@@ -11,8 +11,10 @@
     "author": "Nikhil Kumar Singh <nikhilkumarsingh.in@gmail.com>",
     "type": "module",
     "scripts": {
+        "dev:backend": "npm run dev --workspace=@repo/backend",
+        "start:backend": "npm start --workspace=@repo/backend",
         "build": "tsc -b",
-        "clean:ts-build": "tsc -b --clean",
+        "clean:build": "tsc -b --clean",
         "format": "prettier --write .",
         "format:check": "prettier --check ."
     },
@@ -22,5 +24,8 @@
     },
     "engines": {
         "node": ">=24.0.0"
+    },
+    "allowScripts": {
+        "esbuild@0.28.2": true
     }
 }
